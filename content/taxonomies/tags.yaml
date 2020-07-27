@@ -1,0 +1,7 @@
+title: Tags
+template: blog/taxonomy
+seo:
+  title: '{{ title }} blog berichten'
+  description: 'Welkom bij het {{ title }} blog van Active & Fit! Hier vindt u de laatste nieuwtjes en tips voor een gezondere levensstijl.'
+  sitemap: true
+route: '/blog/{slug}'

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js" lang="nl-NL">
+
+<head>
+    {{ partial:head }}
+</head>
+
+<body>
+    <div id="page-loader">
+        <div class="page-loader-inner">
+            <span class="loader-figure"></span>
+            <h6 class="loader-label">Laden</h6>
+            <img class="loader-logo" src="{{ theme:img src='logo-scroll.png' }}"
+                srcset="{{ theme:img src='logo-scroll.png' }} 1x, {{ theme:img src='logo-scroll@2x.png' }} 2x" alt="Loader Logo">
+        </div>
+    </div>
+
+    {{ template_content }}
+
+    <div id="ouibounce-modal">
+        <div class="underlay"></div>
+        <div class="modal"
+            style="background:url( {{ theme:img src='modal.jpg' }} ) center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="modal-body">
+                <div class="wrapper-small">
+                    <div class="spacer-small"></div>
+                    <h3>Voordat je Active &amp; Fit verlaat...</h3>
+                    <p><strong>Je hebt vast vragen, of heb je een steuntje in je rug nodig?</strong><br>
+                        - Kan ik dit wel?<br>
+                        - Wat past het best bij mij?<br>
+                        - Hoe werkt het?<br>
+                        - Kan ik eerst kennismaken?<br><br>
+                        <strong>Wij beantwoorden je vragen graag!</strong></p>
+                    <small>Helemaal vrijblijvend</small>
+                    <p><a class="sr-button sr-counter button-2 button-small rounded" href="/contact" target="_blank">KOM
+                            KENNISMAKEN</a></br>
+                        <small class="modal-footer">Nee thanks, ik blijf liever op de bank zitten</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    {{ theme:js src="jquery-2.1.4.min" tag="true" }}
+    {{ theme:js src="jquery.easing.1.3" tag="true" }}
+    {{ theme:js src="jquery.visible.min" tag="true" }}
+    {{ theme:js src="revolution/js/jquery.themepunch.tools.min" tag="true" }}
+    {{ theme:js src="revolution/js/jquery.themepunch.revolution.min" tag="true" }}
+    {{ theme:js src="revolution/js/extensions/revolution.extension.slideanims.min" tag="true" }}
+    {{ theme:js src="revolution/js/extensions/revolution.extension.layeranimation.min" tag="true" }}
+    {{ theme:js src="revolution/js/extensions/revolution.extension.navigation.min" tag="true" }}
+    {{ theme:js src="revolution/js/extensions/revolution.extension.video.min" tag="true" }}
+    {{ theme:js src="revolution/js/extensions/revolution.extension.actions.min" tag="true" }}
+    {{ theme:js src="tweenMax" tag="true" }}
+    {{ theme:js src="form-validation.min" tag="true" }}
+    {{ theme:js src="jquery.backgroundparallax.min" tag="true" }}
+    {{ theme:js src="jquery.isotope.min" tag="true" }}
+    {{ theme:js src="jquery.imagesloaded.min" tag="true" }}
+    {{ theme:js src="jquery.owl.carousel" tag="true" }}
+    {{ theme:js src="jquery.lightcase.min" tag="true" }}
+    {{ theme:js src="script" tag="true" }}
+    {{ theme:js src="ouibounce" tag="true" }}
+    {{ theme:js src="slick/slick.min" tag="true" }}
+
+    <script>
+        // if you want to use the 'fire' or 'disable' fn,
+        // you need to save OuiBounce to an object
+        var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+            sensitivity: 20,
+            timer: 0,
+            callback: function () { console.log('ouibounce fired!'); }
+        });
+
+        $('body').on('click', function () {
+            $('#ouibounce-modal').hide();
+        });
+
+        $('#ouibounce-modal .modal-footer').on('click', function () {
+            $('#ouibounce-modal').hide();
+        });
+
+        $('#ouibounce-modal .modal').on('click', function (e) {
+            e.stopPropagation();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.logo-slider').slick({
+                infinite: true,
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+
+
+    <!-- SCRIPTS -->
+
+</body>
+
+</html>

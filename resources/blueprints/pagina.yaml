@@ -1,0 +1,22 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: 'Naam van de pagina'
+          localizable: true
+      -
+        handle: seo_titel
+        field:
+          type: text
+          display: 'SEO titel'
+      -
+        handle: seo_beschrijving
+        field:
+          type: textarea
+          display: 'SEO beschrijving'
+taxonomies: false
+title: Pagina

@@ -1,0 +1,29 @@
+admin:
+  title: Admin
+  permissions:
+    - super
+editor:
+  title: Editor
+  slug: editor
+  permissions:
+    - 'access cp'
+    - 'view pages entries'
+    - 'edit pages entries'
+    - 'view blog entries'
+    - 'edit blog entries'
+    - 'reorder blog entries'
+    - 'create blog entries'
+    - 'publish blog entries'
+    - 'delete blog entries'
+    - 'view tags terms'
+    - 'edit tags terms'
+    - 'create tags terms'
+    - 'delete tags terms'
+    - 'view main assets'
+    - 'edit main assets'
+    - 'move main assets'
+    - 'rename main assets'
+    - 'upload main assets'
+    - 'delete main assets'
+    - 'view contact form submissions'
+    - 'delete contact form submissions'

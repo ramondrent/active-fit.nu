@@ -1,0 +1,81 @@
+<!-- HEADER -->
+<header id="header" class="{{ (Request::is('/') ? 'header-transparent' : '') }} transparent-light sub-dark">
+    <div class="header-inner clearfix">
+
+        <!-- LOGO -->
+        <div id="logo" class="left-float">
+            <a href="/">
+                <img id="scroll-logo" src="{{ theme:img src='logo-scroll.png' }}"
+                    srcset="{{ theme:img src='logo-scroll.png' }} 1x, {{ theme:img src='logo-scroll@2x.png' }} 2x" alt="Logo Scroll">
+                <img id="dark-logo" src="{{ theme:img src='logo.png' }}"
+                    srcset="{{ theme:img src='logo.png' }} 1x, {{ theme:img src='logo@2x.png' }} 2x" alt="Logo Dark">
+                <img id="light-logo" src="{{ theme:img src='footer-logo.png' }}"
+                    srcset="{{ theme:img src='footer-logo.png' }} 1x, {{ theme:img src='footer-logo@2x.png' }} 2x" alt="Logo Light">
+            </a>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <div id="menu" class="right-float clearfix">
+            <a href="#" class="responsive-nav-toggle"><span class="hamburger"></span></a>
+            <div class="menu-inner">
+                <nav id="main-nav">
+                    <ul>
+                        <li class="{{ if current_uri == '/' }}current-menu-item{{ endif }}"><a href="/">Home</a>
+                        </li>
+
+                        <li class="menu-item-has-children"><a href="#">Aanbod</a>
+                            <ul class="submenu">
+                                <li><a href="/bootcamp">Bootcamp</a></li>
+                                <li><a href="/boxing-bootcamp">Boxing bootcamp</a></li>
+                                <li><a href="/personal-training">Personal training</a></li>
+                                <li><a href="/business-bootcamp">Business bootcamp</a></li>
+                                <li><a href="/small-group">Small group</a></li>
+                                <li><a href="/kids-bootcamp">Kids bootcamp</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- <li class="{{ if current_uri == '/lesrooster' }}current-menu-item{{ endif }}"><a
+                                href="/lesrooster">Lesrooster</a>
+                        </li> -->
+
+                        <!-- <li class="{{ if current_uri == '/tarieven' }}current-menu-item{{ endif }}"><a
+                                href="/tarieven">Tarieven</a>
+                        </li> -->
+
+                        <li class="{{ if current_uri == '/contact' }}current-menu-item{{ endif }}"><a
+                                href="/contact">Contact</a>
+                        </li>
+
+                        <li class="{{ if current_uri == '/blog' }}current-menu-item{{ endif }}"><a href="/blog">Blog</a>
+                        </li>
+
+                        <li><a href="https://app.paynplan.nl/account?id=3037" target="_blank">Inloggen</a></li>
+                    </ul>
+                </nav>
+
+                <div id="menu-misc" class="clearfix">
+
+                    <!-- HEADER SEARCH -->
+                    <div id="header-cart">
+                        <a id="show-cart" href="https://www.facebook.com/activefitnl/" target="_blank"><i
+                                class="fa fa-facebook"></i></a>
+                    </div>
+
+                    <!-- HEADER CART -->
+                    <div id="header-cart">
+                        <a id="show-cart" href="https://www.instagram.com/activefitnl/" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
+                    </div><!-- END #header-cart -->
+
+                    <!-- HEADER CART -->
+                    <div id="header-cart">
+                        <a id="show-cart" href="https://www.linkedin.com/company/activefitnl/" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                    </div><!-- END #header-cart -->
+
+                </div><!-- END #menu-misc -->
+            </div><!-- END .menu-inner -->
+        </div><!-- END #menu -->
+
+    </div> <!-- END .header-inner -->
+</header>

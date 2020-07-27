@@ -1,0 +1,94 @@
+<div class="page-content">
+    {{ partial:navigation }}
+
+    <!-- HERO  -->
+    <section id="hero" class="hero-big parallax-section text-light"
+        data-parallax-image="{{ theme:img src='blog-background.jpg' }}" position="-100px">
+
+        <div id="page-title" class="wrapper align-center">
+            <h1 class="uppercase"><strong>Blog</strong></h1>
+        </div> <!-- END #page-title -->
+        <a href="#" id="scroll-down"></a>
+
+    </section>
+    <!-- HERO -->
+
+    <!-- PAGEBODY -->
+    <section id="page-body">
+        <div class="wrapper">
+
+            <div class="main-content left-float">
+
+                <div id="blog-grid" class="classic-blog blog-container">
+
+                    {{ collection from="blog" }}
+                    <div class="blog-item">
+                        {{ if main_image }}
+                        <div class="blog-media">
+                            <a href="/blog/{{ slug }}" class="thumb-overlay">
+                                <img src="{{ main_image }}" alt="{{ title }}">
+                            </a>
+                        </div>
+                        {{ /if }}
+
+                        <div class="blog-desc">
+                            <div class="blog-headline">
+                                <h6 class="post-category uppercase">
+                                    {{ tags }}
+                                        {{ title }}
+                                    {{ /tags }}
+                                </h6>
+                                <h3 class="post-name"><a
+                                        href="/blog/{{ slug }}"><strong>{{ title }}</strong></a></h3>
+                            </div>
+                            <p>{{ teaser }}</p>
+                            <p><a href="/blog/{{ slug }}">Lees verder &rarr;</a></p>
+                            <ul class="blog-meta">
+                                <li class="post-date">{{ date | relative }}</li>
+                                <li class="post-author"><img src="https://www.gravatar.com/avatar/983bec8f8233d0efb23c8cf5f091894b?s=2400&d=mm"
+                                        alt="Avatar van Janieke"><span>door Janieke</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    {{ /collection }}
+
+                </div> <!-- END #blog-grid .classic-blog -->
+
+            </div>
+
+
+
+            <aside class="sidebar right-float">
+                <div class="sidebar-content">
+                    <div class="widget widget_tag_cloud">
+                        <h4 class="widget-title uppercase">Categorieën</h6>
+                            <div class="tagcloud">
+                                <a href="/blog">ALLE BERICHTEN</a>
+                                <a href="/blog/fitness">FIT(NESS)</a>
+                                <a href="/blog/food">FOOD</a>
+                                <a href="/blog/goodvibes">GOODVIBES</a>
+                                <a href="/blog/recepten">RECEPTEN</a>
+                            </div>
+                    </div>
+                    <div class="widget widget_recent_entries">
+                        <h4 class="widget-title uppercase">Recente berichten</h6>
+                        <ul>
+                            {{ collection from="blog" limit=3 }}
+                            <li>
+                                <a href="/blog/{{ slug }}">{{ title }}</a>
+                                <span
+                                    class="post-date">{{ date | relative }}</span>
+                            </li>
+                            {{ /collection }}
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+        </div> <!-- END .wrapper-small -->
+
+        <div class="spacer-big"></div>
+    </section>
+    <!-- PAGEBODY -->
+</div>
+{{ partial:footer }}

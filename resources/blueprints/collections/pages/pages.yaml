@@ -1,0 +1,42 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: seo_titel
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'SEO titel'
+      -
+        handle: seo_beschrijving
+        field:
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'SEO beschrijving'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false

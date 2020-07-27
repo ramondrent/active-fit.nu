@@ -1,0 +1,79 @@
+<div class="page-content">
+    {{ partial:navigation }}
+
+    <!-- HERO  -->
+    <section id="hero" class="hero-auto">
+
+        <div id="page-title" class="wrapper align-center">
+            <h1><strong>{{ title }}</strong></h1>
+            <ul class="blog-meta">
+                <li class="post-date">{{ date | relative }}</li>
+                <li class="post-author"><span>door Janieke</span></li>
+            </ul>
+        </div> <!-- END #page-title -->
+
+    </section>
+    <!-- HERO -->
+
+    <!-- PAGEBODY -->
+    <section id="page-body" class="notoppadding">
+
+        <div id="blog-single" class="wrapper-small">
+
+            <div class="post-content">
+
+                {{ if main_image }}
+                <div class="blog-media">
+                    <img src="{{ main_image }}" alt="{{ title }}">
+                </div>
+                {{ /if }}
+
+                <p><strong>{{ teaser }}</strong></p>
+
+                {{ body }}
+                    {{ if type == "text" }}
+                        {{ text }}
+                    {{ /if }}
+                    {{ if type == "afbeelding" }}
+                        <img src="{{ image }}" alt="{{ caption }}" style="display: block; margin: 0 auto;" />
+                        <figcaption>{{ caption }}</figcaption>
+                    {{ /if }}
+                {{ /body }}
+
+            </div> <!-- END .post-content -->
+
+            <div class="author-box">
+                <div class="author-image"><img src="https://www.gravatar.com/avatar/983bec8f8233d0efb23c8cf5f091894b?s=2400&d=mm" alt="Foto van Janieke">
+                </div>
+                <div class="author-details">
+                    <h6 class="subtitle-2">Geschreven door</h6>
+                    <h5 class="author-name">Janieke</h5>
+                    <p class="author-desc">Ik heb geleerd dat beweging de belangrijkste factor voor een gezond lichaam
+                        is. Daarom ben ik mijn bedrijf Active & Fit
+                        gestart. Op dit moment studeer ik fysiotherapie. Daarnaast volg ik verschillende cursussen om
+                        mijn kennis te vergroten.
+                        Het geven van trainingen en het begeleiden en motiveren van mensen geven me veel positieve
+                        energie. Zelf ben ik ervan
+                        overtuigd dat een sterk, fit en gezond lichaam veel voordelen heeft: een hoger energieniveau,
+                        een gezonde geest, meer
+                        zelfvertrouwen en het ervaren van stress vermindert.
+                        Als ik iets wil bereiken zet ik me volledig in. Dit verwacht ik ook van mijn sporters.<br>
+                        <strong>Let’s go Active &amp; Fit!</strong></p>
+                </div>
+            </div>
+
+        </div> <!-- END #blog-single .wrapper-small -->
+
+
+        <div class="spacer-medium"></div>
+
+        <div id="single-pagination">
+            <ul>
+                <li class="back"><a href="/blog">Terug naar het blog</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- PAGEBODY -->
+</div>
+{{ partial:footer }}

@@ -1,0 +1,9 @@
+title: 'Default Globals'
+fields:
+  -
+    handle: site_name
+    field:
+      type: text
+      display: 'Website Name'
+      instructions: 'The name of your website'
+      localizable: true

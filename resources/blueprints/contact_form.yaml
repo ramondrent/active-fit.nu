@@ -1,0 +1,31 @@
+title: Contactformulier
+fields:
+  -
+    handle: name
+    field:
+      type: text
+      display: Naam
+      validate: 'required|min:2'
+  -
+    handle: email
+    field:
+      type: text
+      display: 'E-mail adres'
+      validate: required|email
+  -
+    handle: phone
+    field:
+      type: text
+      display: Telefoonnummer
+      validate: required
+  -
+    handle: info
+    field:
+      type: text
+      display: 'Ik wil graag meer informatie ontvangen over'
+      validate: ''
+  -
+    handle: message
+    field:
+      type: text
+      display: Opmerkingen

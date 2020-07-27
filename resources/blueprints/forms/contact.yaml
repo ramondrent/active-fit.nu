@@ -1,0 +1,42 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          display: Naam
+          type: text
+          validate: required
+          listable: hidden
+          input_type: text
+      -
+        handle: email
+        field:
+          display: Email
+          type: text
+          validate: required
+          listable: hidden
+          input_type: email
+      -
+        handle: phone
+        field:
+          display: Telefoonnummer
+          type: text
+          validate: required
+          listable: hidden
+          input_type: text
+      -
+        handle: info
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Meer informatie over'
+      -
+        handle: message
+        field:
+          display: Opmerkingen
+          type: textarea
+          listable: hidden
