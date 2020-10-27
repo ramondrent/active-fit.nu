@@ -26,7 +26,7 @@
                         {{ if main_image }}
                         <div class="blog-media">
                             <a href="/blog/{{ slug }}" class="thumb-overlay">
-                                <img src="{{ main_image }}" alt="{{ title }}">
+                                <img src="{{ glide:main_image width="1280" }}" alt="{{ title }}">
                             </a>
                         </div>
                         {{ /if }}
@@ -60,16 +60,6 @@
 
             <aside class="sidebar right-float">
                 <div class="sidebar-content">
-                    <div class="widget widget_tag_cloud">
-                        <h4 class="widget-title uppercase">Categorieën</h6>
-                            <div class="tagcloud">
-                                <a href="/blog">ALLE BERICHTEN</a>
-                                <a href="/blog/fitness">FIT(NESS)</a>
-                                <a href="/blog/food">FOOD</a>
-                                <a href="/blog/goodvibes">GOODVIBES</a>
-                                <a href="/blog/recepten">RECEPTEN</a>
-                            </div>
-                    </div>
                     <div class="widget widget_recent_entries">
                         <h4 class="widget-title uppercase">Recente berichten</h6>
                         <ul>
