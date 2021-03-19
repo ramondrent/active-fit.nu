@@ -1,2 +1,6 @@
 title: Contactformulier
 honeypot: city
+email:
+  -
+    to: info@active-fit.nu
+    subject: 'Nieuw bericht van active-fit.nu'

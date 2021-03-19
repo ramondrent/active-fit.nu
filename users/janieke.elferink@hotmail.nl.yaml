@@ -4,3 +4,12 @@ content: 'Ik heb geleerd dat beweging de belangrijkste factor voor een gezond li
 name: 'Janieke Elferink'
 id: c362059c-1988-4793-975c-cf3fd60a5155
 password_hash: $2y$10$RNvT7/p6CEtft2x9NMMYA.j29JR2UNU1WS9I3eEcJ5soajw8adv06
+preferences:
+  collections:
+    blog:
+      columns:
+        - title
+        - teaser
+        - main_image
+        - body
+        - date
