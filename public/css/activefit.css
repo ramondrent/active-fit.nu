@@ -1,3 +1,46 @@
 .city {
     display: none;
 }
+
+.google-review {
+    font-size: 12px !important;
+    line-height: 27px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    padding-top: 15px !important;
+    font-style: normal !important;
+}
+
+blockquote cite {
+    font-size: 10px !important;
+    margin-top: 0 !important;
+}
+
+blockquote::before {
+    display: none !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.header-link {
+    cursor: pointer !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .fixed-mobile {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    nav#main-nav>ul>li>a {
+        font-size: 10px;
+    }
+}
+
+#backtotop {
+    display: none !important;
+}

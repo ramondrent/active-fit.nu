@@ -29,7 +29,7 @@ Small desktop screens
 Tablet Landscape
 
 ------------------------ */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
 
 	/* Fonts */
 	h1 { font-size: 67px; line-height: 80px; }

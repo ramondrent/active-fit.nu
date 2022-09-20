@@ -2,7 +2,7 @@
 <html class="no-js" lang="nl-NL">
 
 <head>
-    {{ partial:head }}
+    {{ partial:head2 }}
 </head>
 
 <body>
@@ -99,6 +99,49 @@
 
 
     <!-- SCRIPTS -->
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?19021';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#5f6ae9",
+          "ctaText":"",
+          "borderRadius":"25",
+          "marginLeft":"0",
+          "marginBottom":"25",
+          "marginRight":"25",
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"Active & Fit",
+          "brandSubTitle":"Reageert binnen enkele uren",
+          "brandImg":"https://www.gravatar.com/avatar/983bec8f8233d0efb23c8cf5f091894b?s=2400&d=mm",
+          "welcomeText":"Hi!\nKunnen we je ergens mee helpen?",
+          "messageText":"",
+          "backgroundColor":"#0a5f54",
+          "ctaText":"Start een chat",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"31611415741"
+      }
+    };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+
+    <script>
+        $(".header-link").click(function(){
+            window.location=$(this).find("a").attr("href"); 
+            return false;
+       });
+    </script>
 
 </body>
 

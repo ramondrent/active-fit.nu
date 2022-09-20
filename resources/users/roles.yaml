@@ -4,7 +4,6 @@ admin:
     - super
 editor:
   title: Editor
-  slug: editor
   permissions:
     - 'access cp'
     - 'view pages entries'
@@ -27,3 +26,7 @@ editor:
     - 'delete main assets'
     - 'view contact form submissions'
     - 'delete contact form submissions'
+    - 'edit other authors pages entries'
+    - 'edit other authors blog entries'
+    - 'publish other authors blog entries'
+    - 'delete other authors blog entries'

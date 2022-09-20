@@ -1,0 +1,44 @@
+<div id="page-content">
+    {{ partial:navigation }}
+
+
+    <div id="page-body">
+        <div class="wrapper">
+            <div class="column-section clearfix">
+                <div class="column one-third">
+                    <div class="product-media">
+                        <div class="product-main-image">
+                            {{ image }}
+                            <img src="{{ url }}" alt="{{ alt }}">
+                            {{ /image }}
+                        </div>
+                     </div>
+                </div>
+                <div class="column two-third last-col">
+                    <div class="product-desc">
+                        <h2 class="product-name"><strong>{{ title }}</strong></h2>
+                        
+                        <h6 class="subtitle-2">{{ subtitle }}</h6>
+
+                        <p>{{ qualities }}</p>
+
+                        <div class="spacer-small"></div>
+                        
+                        <div class="product-intro">
+                            <p>{{ content }}</p>
+                            <strong>{{ cta }}</strong>
+                        </div>
+                        
+                    
+
+                        
+                     </div> <!-- END .product-desc -->     
+                </div> <!-- END .column -->  
+            </div> <!-- END .column-section -->  
+            <div class="spacer-big"></div>
+        </div> <!-- END .wrapper -->
+    </div>
+
+</div>
+
+{{ partial:footer }}

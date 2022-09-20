@@ -1,0 +1,61 @@
+title: Team
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Subtitle
+      -
+        handle: qualities
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Qualities
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          localizable: false
+          listable: hidden
+          display: Image
+      -
+        handle: cta
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: CTA
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          required: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'

@@ -38,22 +38,7 @@ return [
     */
 
     'widgets' => [
-        [
-            'type' => 'collection',
-            'collection' => 'blog',
-            'limit' => 5,
-        ],
-        [
-            'type' => 'form',
-            'form' => 'contact',
-            'limit' => 5,
-            'title' => 'Contactformulier',
-            'width' => 'full',
-            'fields' => [
-                'name',
-                'email',
-            ],
-        ],
+        //
     ],
 
     /*

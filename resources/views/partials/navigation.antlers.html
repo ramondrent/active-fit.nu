@@ -20,19 +20,23 @@
             <div class="menu-inner">
                 <nav id="main-nav">
                     <ul>
-                        <li class="{{ if current_uri == '/' }}current-menu-item{{ endif }}"><a href="/">Home</a>
-                        </li>
+                        <li><a class="{{ if current_uri == '/personal-training' }}current-menu-item{{ endif }}" href="/personal-training">Personal training</a></li>
 
-                        <li class="menu-item-has-children"><a href="#">Aanbod</a>
+                        <li class="menu-item-has-children {{ if current_uri == '/groepslessen' }}current-menu-item{{ endif }}"><a href="/groepslessen">Groepslessen</a>
                             <ul class="submenu">
                                 <li><a href="/bootcamp">Bootcamp</a></li>
-                                <li><a href="/boxing-bootcamp">Boxing bootcamp</a></li>
-                                <li><a href="/kids-bootcamp">Kids bootcamp</a></li>
+                                <li><a href="/bootcamp-light">Bootcamp Light</a></li>
+                                <li><a href="/zwanger-en-fit">Zwanger & Fit</a></li>
+                                <li><a href="/boxing-en-fit">Boxing & Fit</a></li>
+                                <li><a href="/strong-en-fit">Strong & Fit</a></li>
+                                <li><a href="/yin-yoga">Yin Yoga</a></li>
                                 <li><a href="/yep-bootcamp">YEP bootcamp</a></li>
-                                <li><a href="/business-bootcamp">Business bootcamp</a></li>
-                                <li><a href="/personal-training">Personal training</a></li>
                                 <li><a href="/small-group">Small group</a></li>
                             </ul>
+                        </li>
+
+                        <li class="{{ if current_uri == '/business-bootcamp' }}current-menu-item{{ endif }}">
+                            <a href="/business-bootcamp">bedrijfsfitness</a>
                         </li>
 
                         <li class="{{ if current_uri == '/lesrooster' }}current-menu-item{{ endif }}"><a
@@ -50,31 +54,11 @@
                         <li class="{{ if current_uri == '/blog' }}current-menu-item{{ endif }}"><a href="/blog">Blog</a>
                         </li>
 
-                        <li><a href="https://app.paynplan.nl/account?id=3037" target="_blank">Inloggen</a></li>
+                        <li><div class="sr-button button-1 button-small header-link" style="padding: 12px 20px;"><a class="text-white" href="https://app.paynplan.nl/account?id=3037" target="_blank">Inloggen</a></div></li>
+
+                        <li><div class="sr-button button-2 button-small header-link" style="padding: 12px 20px;"><a class="text-white" href="https://www.paynplan.nl/free-trial/p/21900" target="_blank">Gratis Proefles</a></div></li>
                     </ul>
                 </nav>
-
-                <div id="menu-misc" class="clearfix">
-
-                    <!-- HEADER SEARCH -->
-                    <div id="header-cart">
-                        <a id="show-cart" href="https://www.facebook.com/activefitnl/" target="_blank"><i
-                                class="fa fa-facebook"></i></a>
-                    </div>
-
-                    <!-- HEADER CART -->
-                    <div id="header-cart">
-                        <a id="show-cart" href="https://www.instagram.com/activefitnl/" target="_blank"><i
-                                class="fa fa-instagram"></i></a>
-                    </div><!-- END #header-cart -->
-
-                    <!-- HEADER CART -->
-                    <div id="header-cart">
-                        <a id="show-cart" href="https://www.linkedin.com/company/activefitnl/" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
-                    </div><!-- END #header-cart -->
-
-                </div><!-- END #menu-misc -->
             </div><!-- END .menu-inner -->
         </div><!-- END #menu -->
 

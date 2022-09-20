@@ -30,8 +30,10 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
+          required: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'
       -
         handle: parent
         field:
@@ -40,3 +42,4 @@ sections:
             - pages
           max_items: 1
           listable: false
+          localizable: true

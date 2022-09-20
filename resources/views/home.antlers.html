@@ -3,7 +3,7 @@
 
     {{ partial:navigation }}
 
-    <section id="hero" class="hero-auto">
+    {{# <section id="hero" class="hero-auto">
 
         <div class="revolution-slider-wrapper">
             <div class="revolution-slider" data-version="5.0">
@@ -61,7 +61,248 @@
 
         <a href="#" id="scroll-down" class="text-light"></a>
 
+    </section> #}}
+
+    <!-- HERO  -->
+	<section id="hero" class="hero-auto">
+    	
+        <div class="revolution-slider-wrapper">
+            <div id="revolutionslider1" class="revolution-slider"  data-version="5.0">
+                <ul>
+                    <li class="text-light" data-transition="fade" data-masterspeed="700">			
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ theme:img src='bootcamp-hero.jpg' }}"  alt=""  width="1920" height="1280">
+
+                                                    
+                        <!-- LAYER NR. 3 --> 
+                        <div class="tp-caption sudo-caption align-center" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['-50', '-50', '-40', '-100']"
+                            data-fontsize="['72','67','58','42']"
+							data-lineheight="['80','75','66','50']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;o:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="800">
+                            <strong class="uppercase fixed-mobile">Groepslessen en <br>Personal Training</strong>
+                        </div>
+                        
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['160','160','130','130']"
+                            data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="opacity:0" 							 
+                            data-start="1200">
+                            <a href="/lesrooster" class="sr-button button-small button-4 rounded">Bekijk het lesrooster</a>
+                        </div>
+                                            
+                    </li> <!-- END first slide -->
+                    
+                    <li class="text-light" data-transition="fade" data-masterspeed="700">			
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ theme:img src='small-group-1.jpg' }}"  alt=""  width="1920" height="1280">
+                        
+                                                    
+                        <!-- LAYER NR. 3 --> 
+                        <div class="tp-caption sudo-caption align-center" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['-50','-50','-40','-25']"
+                            data-fontsize="['72','67','58','42']"
+							data-lineheight="['80','75','66','50']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;o:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="400">
+                            <strong class="uppercase fixed-mobile">Strippenkaart of <br>abonnement?</strong>
+                        </div>
+                        
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['50','50','95','75']"
+                            data-width="auto" 							
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="opacity:0" 							 
+                            data-start="600">
+                            <hr class="zigzag medium">
+                        </div>
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption sudo-caption subtitle-2 uppercase"				
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['100','100','150','150']"
+                            data-fontsize="['24','24','20','18']"
+							data-lineheight="['24','24','20','18']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:0.7"	
+                            data-transform_in="o:0;y:50px;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="800"
+                            data-responsive_offset="on">
+                            Aan jou de keus
+                        </div>
+                                            
+                    </li> <!-- END first slide -->
+
+                    <li class="text-light" data-transition="fade" data-masterspeed="700">			
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ theme:img src='slide-3.jpg' }}"  alt=""  width="1920" height="1280">
+                        
+                                                    
+                        <!-- LAYER NR. 3 --> 
+                        <div class="tp-caption sudo-caption align-center" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['-50','-50','-40','-25']"
+                            data-fontsize="['72','67','58','30']"
+							data-lineheight="['80','75','66','35']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;o:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="400">
+                            <strong class="uppercase">Een sportieve clinic <br>of bedrijfsfitness</strong>
+                        </div>
+                        
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['50','50','95','50']"
+                            data-width="auto" 							
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="opacity:0" 							 
+                            data-start="600">
+                            <hr class="zigzag medium">
+                        </div>
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption sudo-caption subtitle-2 uppercase"				
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['100','100','95','100']"
+                            data-fontsize="['24','24','20','18']"
+							data-lineheight="['24','24','20','18']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:0.7"	
+                            data-transform_in="o:0;y:50px;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="800"
+                            data-responsive_offset="on">
+                            Alles is mogelijk
+                        </div>
+                                            
+                    </li> <!-- END first slide -->
+
+                    <li class="text-light" data-transition="fade" data-masterspeed="700">			
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ theme:img src='contact-page.jpg' }}"  alt=""  width="1920" height="1280">
+                        
+                                                    
+                        <!-- LAYER NR. 3 --> 
+                        <div class="tp-caption sudo-caption align-center" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="0"
+                            data-fontsize="['72','67','58','42']"
+							data-lineheight="['80','75','66','50']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;o:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="800">
+                            <strong>JOUW DOEL<br>ONZE MISSIE</strong>
+                        </div>
+                        
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption" 						
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['100','100','95','75']"
+                            data-width="auto" 							
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="opacity:0" 							 
+                            data-start="1000">
+                            <hr class="zigzag medium">
+                        </div>
+                    
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption sudo-caption subtitle-2 uppercase"				
+                            data-x="center" data-hoffset="0" 
+                            data-y="center" data-voffset="['150','150','150','150']"
+                            data-fontsize="['24','24','20','12']"
+							data-lineheight="['24','24','20','18']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+                            data-transform_idle="o:0.7"	
+                            data-transform_in="o:0;y:50px;s:1000;e:Power3.easeOut;" 
+                            data-transform_out="o:0" 							 
+                            data-start="800"
+                            data-responsive_offset="on">
+                            Ga voor optimaal resultaat op de lange termijn
+                        </div>
+                                            
+                    </li> <!-- END first slide -->
+              	</ul>				
+             </div><!-- END .revolution-slider -->
+       	</div> <!-- END .revolution-slider-wrapper -->
+         
+        <a href="#" id="scroll-down" class="text-light"></a>
+        
     </section>
+    <!-- HERO -->
+
+    <!-- PAGEBODY -->
+	<section id="page-body" class="notoppadding">
+        
+        <div class="fullwidth-section" style="background:#f5f6f7;">
+        	<div class="fullwidth-content wrapper">
+                <div class="column-section">
+                    <div class="column two-third">
+                        <h1><strong>Active & Fit</strong></h1>
+            	<h2 class="subtitle-2">Wij maken het verschil:</h2>
+                <div class="spacer-big"></div>
+
+                <ul class="no-list-style">
+                    <li><h6 class="uppercase">&#10003; Kwaliteit staat op nummer één</h6></li>
+                    <li><h6 class="uppercase">&#10003; Persoonlijke aandacht</h6></li>
+                    <li><h6 class="uppercase">&#10003; Professionele begeleiding</h6></li>
+                    <li><h6 class="uppercase">&#10003; Snel resultaat</h6></li>
+                    <li><h6 class="uppercase">&#10003; Plezier en sporten in één</h6></li>
+                    <li><h6 class="uppercase">&#10003; Uitdaging voor iedereen</h6></li>
+                    <li><h6 class="uppercase">&#10003; Makkelijk en snel trainingen inplannen via onze app</h6></li>
+                </ul>
+                    </div>
+                    <div class="column one-third last-col" style="background: url( {{ theme:img src='wijmakenhetverschil.jpeg' }} ) center center / cover; min-height: 500px;"></div>
+                </div>
+            	
+                
+            </div>
+        </div> <!-- END .fullwidth-section -->
+        
+ 	</section>
+	<!-- PAGEBODY -->
 
     <!-- PAGEBODY -->
     <section id="page-body" class="notoppadding">
@@ -73,209 +314,108 @@
         <div class="spacer-big"></div>
 
         <div class="wrapper-small">
-            <h1 class="align-center" style="font-size:40px;"><strong>Word ‘Active &amp; Fit’, kom in beweging!</strong></h1>
+            <h1 class="align-center" style="font-size:40px;"><strong>Word de fitste versie van jezelf!</strong></h1>
             <hr class="big colored align-center">
             <h4 class="subtitle-1 align-center">Bij ons is iedereen welkom, train op je eigen niveau.<br>
                 Creëer een nieuwe actieve passie en daag jezelf uit.<br>
-                Laat ons je helpen Active & Fit te worden!<br>
+                Laat ons je helpen <strong>Active & Fit</strong> te worden!<br>
             </h4>
         </div> <!-- END .wrapper-small -->
 
         <div class="spacer-big"></div>
 
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>Bootcamp</strong></h4>
-                <hr class="small thick">
-                <p>Wil je onder professionele begeleiding buiten sporten met een gezellige groep? Dan is dit de perfecte
-                    training voor jou.
-                    We bieden je een uitdagende full body workout in de natuur. Verbrand tot 1000 calorieën per
-                    training, word snel fit!
-                    Kies voor kwaliteit en veiligheid, door onze kleine groepen (max 14 personen).</p>
-                <p><a href="/bootcamp" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-            <div class="column one-half last-col"
-                style="background:url( {{ theme:img src='bootcamp.jpeg' }} ) center center;background-size:cover;">
-
-            </div>
-        </div>
-
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half"
-                style="background:url( {{ theme:img src='boxing-bootcamp.jpg' }} ) center center;background-size:cover;"></div>
-            <div class="column one-half last-col bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>Boxing bootcamp</strong></h4>
-                <hr class="small thick">
-                <p>Lijkt het jou altijd al tof om een keer lekker los te gaan tijdens een bokstraining of wil je even je
-                    hoofd leeg maken
-                    na een drukke week? Dan is boxing de perfecte workout voor jou!
-                    Tijdens onze bokstrainingen wordt er getraind in groepsverband met bokshandschoenen, pads en
-                    trapkussens. Het draait om
-                    teamwork en uithoudingsvermogen gecombineerd met krachtoefeningen.
-                </p>
-                <p><a href="/boxing-bootcamp" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-        </div>
-
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half last-col bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>Kids bootcamp</strong></h4>
-                <hr class="small thick">
-                <p>Wil jij op een leuke manier lekker buiten sporten samen met andere kinderen? Probeer onze kids bootcamp!
-                    Stoer, sterk,
-                    samen, spel en plezier deze woorden beschrijven onze kids bootcamp.
-                    Houdt jouw kind ook van lekker buitenspelen en van een uitdaging? Bij de kids bootcamp draait het om het
-                    verbeteren van
-                    conditie, kracht, coördinatie en motoriek op een leuke speelse manier. Kies voor veiligheid en kwaliteit,
-                    door onze
-                    professie en kleine groepen (max 14 kids).
-                </p>
-                <p><a href="/kids-bootcamp" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-            <div class="column one-half"
-                style="background:url( {{ theme:img src='kids-bootcamp-1.jpeg' }} ) center center;background-size:cover;">
+        <div id="page-body">
+            <div class="wrapper">
+                <div class="column-section bordered-spaced vertical-center clearfix">
+                    <div class="column one-third" style="min-height: 400px; background-color: #F5A802;">
+                        <h4 class="uppercase" style="color: white"><strong>Groepslessen</strong></h4>
+                        <p style="color: white">Wij bieden elke dag verschillende groepslessen aan, benieuwd welke?</p>
+                        <p><a href="/groepslessen" class="sr-button button-small button-3" style="color: white">Bekijk onze groepslessen</a></p>
+                    </div>
+                    <div class="column one-third" style="background: url( {{ theme:img src='bc-inhoud.jpeg' }} ) center center / cover; min-height: 400px;">
+                    </div>
+                    <div class="column one-third last-col" style="background: url( {{ theme:img src='groepslessen-2.jpeg' }} ) center center / cover; min-height: 400px;">
+                    </div>
+                </div>
+                
+                <div class="column-section bordered-spaced vertical-center clearfix">
+                    <div class="column two-third" style="background: url( {{ theme:img src='personal-training-4.jpg' }} ) center center / cover; min-height: 400px;">
+                    </div>
+                    <div class="column one-third last-col" style="min-height: 400px; background-color: #008278; color: white;">
+                        <h4 class="uppercase" style="color:white;"><strong>Personal training / Duo personal training</strong></h4>
+                        <p>Wil jij jouw persoonlijke doelen behalen en professionele begeleiding?
+                            Ga voor personal training of duo personal training.</p>
+                            <p><a href="/personal-training" class="sr-button button-small button-3">Ontdek personal training</a></p>
+                    </div>
+                </div>
+    
+                <div class="column-section bordered-spaced vertical-center clearfix">
+                    <div class="column one-third" style="min-height: 400px; background-color: #e50378;">
+                        <h4 class="uppercase" style="color: white"><strong>Bedrijfsfitness</strong></h4>
+                        <p style="color: white">Wil jij minder ziekteverzuim in jouw bedrijf? Houd je werknemers fysiek en mentaal fit. Bekijk de mogelijkheden van bedrijfsfitness</p>
+                        <p><a href="/business-bootcamp" class="sr-button button-small button-3">Meer info</a></p>
+                    </div>
+                    <div class="column one-third" style="background: url( {{ theme:img src='slide-3.jpeg' }} ) center center / cover; min-height: 400px;">
+                    </div>
+                    <div class="column one-third last-col" style="background: url( {{ theme:img src='business-bootcamp-blok.jpeg' }} ) center center / cover; min-height: 400px;">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half"
-                style="background:url( {{ theme:img src='yep-bootcamp-3.jpeg' }} ) center center;background-size:cover;">
-            </div>
-            <div class="column one-half last-col bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>YEP bootcamp</strong></h4>
-                <hr class="small thick">
-                <p>Word je een jaartje ouder of heb je een blessure/ziekte, maar wil je wel blijven sporten onder professionele
-                begeleiding? Dan is onze YEP (young elderly person) Bootcamp echt wat voor jou!
-                We bieden je een uurtje lekker buiten sporten op je eigen niveau in een gezellige groep.
-                Tijdens de YEP Bootcamp onderhoud je kracht, lenigheid, balans en uithoudingsvermogen om ouderdomskwalen te voorkomen.
-                Ga voor vitaliteit, kwaliteit en veiligheid doe mee met de YEP Bootcamp.
-                </p>
-                <p><a href="/yep-bootcamp" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-        </div>
+        <div class="spacer-medium"></div>
 
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>Business bootcamp</strong></h4>
-                <hr class="small thick">
-                <p>Wil jij de vitaliteit in jouw bedrijf optimaliseren? Business bootcamp is speciaal voor bedrijven die
-                    willen investeren
-                    in de vitaliteit van haar werknemers. Het is algemeen bekend dat fit personeel een positieve invloed
-                    heeft op het
-                    ziekteverzuim onder werknemers. Houd je werknemers fysiek en mentaal fit en ga wekelijks een uurtje
-                    samen sporten. Dit
-                    zorgt voor een ontspannen gevoel en versterkt de band tussen collega’s. Gezonde werknemers zorgen
-                    voor hogere
-                    productiviteit en minder ziekteverzuim, dubbele winst, wie wil dat nou niet?</p>
-                <p><a href="/business-bootcamp" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-            <div class="column one-half last-col"
-                style="background:url( {{ theme:img src='business-bootcamp.jpg' }} ) center center;background-size:cover;">
+        <!-- PAGEBODY -->
+	<section id="page-body">
+    	  
+        <div class="wrapper">
+                   
+           <h3 class="align-center"><strong>Ons team</strong></h3>
+           <div class="spacer-medium"></div>
+           
+           <div class="column-section clearfix">
+               <div class="column one-sixth"></div>
+               <div class="column two-sixth team-member align-center">
+                   <div class="team-image">
+                       <a href="/team/janieke-elferink"><img src="/img/Janieke.jpeg" alt="Janieke Elferink"></a>
+                   </div>
+                   <div class="team-content">
+                       <h5 class="team-name uppercase"><strong>Janieke Elferink</strong></h5>
+                       <h6 class="subtitle-2">Eigenaresse/ Personal trainer / Fysiotherapeute</h6>
+                       <p>POSITIEF - ENTHOUSIAST - FANATIEK</p>
+                   </div>
+               </div>
+               <div class="column two-sixth team-member align-center">
+                   <div class="team-image">
+                    <a href="/team/marinka-elferink"><img src="/img/Marinka.jpg" alt="Marinka Elferink"></a>
+                   </div>
+                   <div class="team-content">
+                       <h5 class="team-name uppercase"><strong>Marinka Elferink</strong></h5>
+                       <h6 class="subtitle-2">Bootcamp trainer / Boks trainer</h6>
+                       <p>ENERGIEK – AMBITIEUS – CREATIEF</p>
+                   </div>
+               </div>
+               <div class="column one-sixth last-col"></div>
+               {{# <div class="column one-third last-col team-member align-center">
+                   <div class="team-image">
+                    <a href="/team/sharon-gordijn"><img src="files/uploads/600x400-light.jpg" alt="Sharon Gordijn"></a>
+                   </div>
+                   <div class="team-content">
+                       <h5 class="team-name uppercase"><strong>Sharon Gordijn</strong></h5>
+                       <h6 class="subtitle-2">Bootcamp / Personal trainer / Strong & Fit</h6>
+                       <p>ENTHOUSIAST – SOCIAAL – GEDREVEN</p>
+                   </div>
+               </div> #}}
+           </div> <!-- END .column-section -->
+           
+           <div class="spacer-big"></div>
+           
+       </div> <!-- END .wrapper -->	
+      
+    </section>
+   <!-- PAGEBODY -->
 
-            </div>
-        </div>
 
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half"
-                style="background:url( {{ theme:img src='personal-training.jpg' }} ) center center;background-size:cover;"></div>
-            <div class="column one-half last-col bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>Personal training</strong></h4>
-                <hr class="small thick">
-                <p>Heb jij een druk leven en een stok achter de deur nodig om te gaan sporten? Bij ons is personal
-                    training meer dan een
-                    uurtje sporten. Wij helpen je van A tot Z om het gewenste resultaat te bereiken, oftewel het totale
-                    plaatje. Wil jij je
-                    leefstijl veranderen en een nieuwe gezonde balans in je leven vinden? Wij focussen ons op jouw doel.
-                    Bij ons krijgt elke
-                    sporter een trainingsplan op maat. Met deze strategie streven we naar het hoogst haalbare resultaat
-                    op de lange termijn.
-                </p>
-                <p><a href="/personal-training" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-        </div>
-
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-half bigpadding text-light" style="background: #111">
-                <h4 class="uppercase"><strong>Small group</strong></h4>
-                <hr class="small thick">
-                <p>Heb jij persoonlijke aandacht nodig om jouw doel te bereiken, maar vind je het ook gezellig om met
-                    anderen te trainen?
-                    Dan is small group een perfecte training voor jou!
-                    Sporten met je familie, vrienden of vriendinnen in onze small group is het mogelijk. Wij geven je de
-                    kennis en aandacht
-                    die je nodig hebt om jouw doelen te behalen.</p>
-                <p><a href="/small-group" class="sr-button button-small button-5">Meer info</a> &nbsp;</p>
-            </div>
-            <div class="column one-half last-col"
-                style="background:url( {{ theme:img src='small-group.jpg' }} ) center center;background-size:cover;">
-
-            </div>
-        </div>
-
-        <div class="spacer-big"></div>
-
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column two-third bigpadding has-animation" style="background:#ffffff;">
-                <h2><strong>Janieke Elferink</strong></h2>
-                <hr class="big colored mini">
-                <h5 class="subtitle-2">POSITIEF - ENTHOUSIAST - FANATIEK</h5>
-                <p>Ik heb geleerd dat beweging de belangrijkste factor voor een gezond lichaam is. Daarom ben ik mijn
-                    bedrijf Active & Fit
-                    gestart. Op dit moment studeer ik fysiotherapie. Daarnaast volg ik verschillende cursussen om mijn
-                    kennis te vergroten.
-                    Het geven van trainingen en het begeleiden en motiveren van mensen geven me veel positieve energie.
-                    Zelf ben ik ervan
-                    overtuigd dat een sterk, fit en gezond lichaam veel voordelen heeft: een hoger energieniveau, een
-                    gezonde geest, meer
-                    zelfvertrouwen en het ervaren van stress vermindert.
-                    Als ik iets wil bereiken zet ik me volledig in. Dit verwacht ik ook van mijn sporters.<br>
-                    <strong>Let’s go Active &amp; Fit!</strong></p>
-
-                <p>
-                    Diploma's<br>
-                    - Fitvak A<br>
-                    - Fitvak B<br>
-                    - Bootcamptrainer<br>
-                    - Sport & Voeding<br>
-                    - Zwanger & fit<br>
-                    - Lapt Knock-out
-                </p>
-            </div>
-            <div class="column one-fourth last-col has-animation janieke" data-delay="100"
-                style="background:url( {{ theme:img src='Janieke.jpeg' }} ) center center; background-size: contain; background-repeat: no-repeat;">
-            </div>
-        </div> <!-- END .column-section -->
-
-        <div class="spacer-small"></div>
-
-        <div class="column-section boxed-sticky adapt-height clearfix">
-            <div class="column one-fourth has-animation janieke" data-delay="100"
-                style="background:url( {{ theme:img src='Marinka.jpg' }} ) center center; background-size: contain; background-repeat: no-repeat;">
-            </div>
-            <div class="column two-third bigpadding has-animation last-col" style="background:#ffffff;">
-                <h2><strong>Marinka Elferink</strong></h2>
-                <hr class="big colored mini">
-                <h5 class="subtitle-2">ENERGIEK – AMBITIEUS – CREATIEF</h5>
-                <p>Sport vind ik heel belangrijk. Het uitdagen van mezelf en anderen vind ik leuk om te doen. Hier krijg
-                    ik energie van.
-                    Tijdens de trainingen let ik heel goed op de houding van mijn deelnemers. Ik gebruik mijn
-                    creativiteit om elke les weer
-                    te zorgen voor afwisseling. Door voldoende uitdaging te bieden tijdens het trainen motiveer ik mijn
-                    deelnemers om net
-                    even een stapje extra te doen. Hierdoor verhoog ik het trainingsniveau van de sporters, zodat ze aan
-                    het eind van de
-                    training een voldaan gevoel hebben. Dan heb ik mijn doel bereikt.
-                    <br>
-                    <strong>Daag jezelf uit en doe mee!</strong></p>
-
-                <p>
-                    Diploma<br>
-                    - Bootcamptrainer
-                </p>
-            </div>
-        </div> <!-- END .column-section -->
-
-        <div class="spacer-big"></div>
 
         <h5 class="subtitle-1 align-center">POWERED BY:</h5>
 
@@ -284,22 +424,22 @@
 
 
         <div class="logo-slider">
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='hhc-hardenberg.jpg' }}"></div>
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='hhc-hardenberg.jpg' }}"></div> #}}
             <div style="margin-right: 15px;"><img src="{{ theme:img src='alleeninkt.jpg' }}"></div>
             <div style="margin-right: 15px;"><img src="{{ theme:img src='rabobank.jpg' }}"></div>
             <div style="margin-right: 15px;"><img src="{{ theme:img src='champ.jpg' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='elle.jpg' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='akmd.jpg' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='beerze-bulten.jpg' }}"></div>
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='elle.jpg' }}"></div> #}}
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='akmd.jpg' }}"></div> #}}
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='beerze-bulten.jpg' }}"></div> #}}
             <div style="margin-right: 15px;"><img src="{{ theme:img src='prins-sport.jpg' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='nike.png' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='mijnfysio.jpg' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='heuver-banden.jpg' }}"></div>
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='nike.png' }}"></div> #}}
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='mijnfysio.jpg' }}"></div> #}}
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='heuver-banden.jpg' }}"></div> #}}
             <div style="margin-right: 15px;"><img src="{{ theme:img src='de-belten.jpg' }}"></div>
             <div style="margin-right: 15px;"><img src="{{ theme:img src='ff-doorbijten.jpg' }}"></div>
             <div style="margin-right: 15px;"><img src="{{ theme:img src='kios-45.jpg' }}"></div>
             <div style="margin-right: 15px;"><img src="{{ theme:img src='svs.jpg' }}"></div>
-            <div style="margin-right: 15px;"><img src="{{ theme:img src='JA-logo.jpg' }}"></div>
+            {{# <div style="margin-right: 15px;"><img src="{{ theme:img src='JA-logo.jpg' }}"></div> #}}
         </div>
 
         <div class="spacer-big"></div>
