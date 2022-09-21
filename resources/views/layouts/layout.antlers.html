@@ -3,6 +3,12 @@
 
 <head>
     {{ partial:head2 }}
+
+    <style>
+        .grecaptcha-badge {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -142,6 +148,8 @@
             return false;
        });
     </script>
+
+    {{ recaptcha }}
 
 </body>
 

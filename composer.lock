@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84450033659f201fe8b9c68fd1ed2bde",
+    "content-hash": "a974c84227c93d6f24775b7b23d0ba21",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -68,6 +68,122 @@
                 "source": "https://github.com/ajthinking/archetype/tree/v1.1.5"
             },
             "time": "2022-08-24T05:52:35+00:00"
+        },
+        {
+            "name": "anakadote/statamic-recaptcha",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anakadote/statamic-recaptcha.git",
+                "reference": "c39fb6b7d8fb00b11b9860e03b499b48ec844f91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anakadote/statamic-recaptcha/zipball/c39fb6b7d8fb00b11b9860e03b499b48ec844f91",
+                "reference": "c39fb6b7d8fb00b11b9860e03b499b48ec844f91",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic reCAPTCHA (v3 and v2)",
+                    "description": "A reCAPTCHA v3 and v2 addon."
+                },
+                "laravel": {
+                    "providers": [
+                        "Anakadote\\StatamicRecaptcha\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anakadote\\StatamicRecaptcha\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Collins",
+                    "homepage": "https://endif.io"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/anakadote/statamic-recaptcha/issues",
+                "source": "https://github.com/anakadote/statamic-recaptcha/tree/1.0.7"
+            },
+            "time": "2022-02-07T23:37:45+00:00"
+        },
+        {
+            "name": "aryehraber/statamic-captcha",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aryehraber/statamic-captcha.git",
+                "reference": "dfa090f27e474b04db909fe58530a6834ab4bf11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aryehraber/statamic-captcha/zipball/dfa090f27e474b04db909fe58530a6834ab4bf11",
+                "reference": "dfa090f27e474b04db909fe58530a6834ab4bf11",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^3.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Captcha",
+                    "slug": "captcha",
+                    "description": "Protect your Statamic forms using a Captcha service",
+                    "version": "1.5.0"
+                },
+                "laravel": {
+                    "providers": [
+                        "AryehRaber\\Captcha\\CaptchaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AryehRaber\\Captcha\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aryeh Raber",
+                    "email": "aryeh.raber@gmail.com",
+                    "homepage": "https://aryeh.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Protect your Statamic forms using a Captcha service",
+            "homepage": "https://github.com/aryehraber/statamic-captcha",
+            "keywords": [
+                "Forms",
+                "captcha",
+                "hcaptcha",
+                "recaptcha",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/aryehraber/statamic-captcha/issues",
+                "source": "https://github.com/aryehraber/statamic-captcha/tree/v1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/aryehraber",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-08T09:37:47+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -4618,16 +4734,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.36",
+            "version": "v3.3.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "f042abd2df5d21cc00ec9340d9cb6132ddc64804"
+                "reference": "28df1861d9855618b69122b7a236e4d1b0bef796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/f042abd2df5d21cc00ec9340d9cb6132ddc64804",
-                "reference": "f042abd2df5d21cc00ec9340d9cb6132ddc64804",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/28df1861d9855618b69122b7a236e4d1b0bef796",
+                "reference": "28df1861d9855618b69122b7a236e4d1b0bef796",
                 "shasum": ""
             },
             "require": {
@@ -4706,7 +4822,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.36"
+                "source": "https://github.com/statamic/cms/tree/v3.3.37"
             },
             "funding": [
                 {
@@ -4714,7 +4830,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-13T18:59:04+00:00"
+            "time": "2022-09-20T13:58:39+00:00"
         },
         {
             "name": "statamic/stringy",
