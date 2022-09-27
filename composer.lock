@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a974c84227c93d6f24775b7b23d0ba21",
+    "content-hash": "8e77e50e5dc1ca78941c30dbe19eaf93",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -115,75 +115,6 @@
                 "source": "https://github.com/anakadote/statamic-recaptcha/tree/1.0.7"
             },
             "time": "2022-02-07T23:37:45+00:00"
-        },
-        {
-            "name": "aryehraber/statamic-captcha",
-            "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aryehraber/statamic-captcha.git",
-                "reference": "dfa090f27e474b04db909fe58530a6834ab4bf11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aryehraber/statamic-captcha/zipball/dfa090f27e474b04db909fe58530a6834ab4bf11",
-                "reference": "dfa090f27e474b04db909fe58530a6834ab4bf11",
-                "shasum": ""
-            },
-            "require": {
-                "statamic/cms": "^3.0"
-            },
-            "type": "statamic-addon",
-            "extra": {
-                "statamic": {
-                    "name": "Captcha",
-                    "slug": "captcha",
-                    "description": "Protect your Statamic forms using a Captcha service",
-                    "version": "1.5.0"
-                },
-                "laravel": {
-                    "providers": [
-                        "AryehRaber\\Captcha\\CaptchaServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "AryehRaber\\Captcha\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aryeh Raber",
-                    "email": "aryeh.raber@gmail.com",
-                    "homepage": "https://aryeh.dev",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Protect your Statamic forms using a Captcha service",
-            "homepage": "https://github.com/aryehraber/statamic-captcha",
-            "keywords": [
-                "Forms",
-                "captcha",
-                "hcaptcha",
-                "recaptcha",
-                "statamic"
-            ],
-            "support": {
-                "issues": "https://github.com/aryehraber/statamic-captcha/issues",
-                "source": "https://github.com/aryehraber/statamic-captcha/tree/v1.8.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/aryehraber",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-03-08T09:37:47+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -4734,16 +4665,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.37",
+            "version": "v3.3.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "28df1861d9855618b69122b7a236e4d1b0bef796"
+                "reference": "0540832d19552ba514abb9c5265f386f4115169d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/28df1861d9855618b69122b7a236e4d1b0bef796",
-                "reference": "28df1861d9855618b69122b7a236e4d1b0bef796",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/0540832d19552ba514abb9c5265f386f4115169d",
+                "reference": "0540832d19552ba514abb9c5265f386f4115169d",
                 "shasum": ""
             },
             "require": {
@@ -4822,7 +4753,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.37"
+                "source": "https://github.com/statamic/cms/tree/v3.3.39"
             },
             "funding": [
                 {
@@ -4830,7 +4761,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-20T13:58:39+00:00"
+            "time": "2022-09-23T20:59:53+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -7984,16 +7915,16 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.11.6",
+            "version": "v14.11.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "6070542725b61fc7d0654a8a9855303e5e157434"
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6070542725b61fc7d0654a8a9855303e5e157434",
-                "reference": "6070542725b61fc7d0654a8a9855303e5e157434",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/04a48693acd785330eefd3b0e4fa67df8dfee7c3",
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3",
                 "shasum": ""
             },
             "require": {
@@ -8038,7 +7969,7 @@
             ],
             "support": {
                 "issues": "https://github.com/webonyx/graphql-php/issues",
-                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.6"
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.8"
             },
             "funding": [
                 {
@@ -8046,7 +7977,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-04-13T16:25:32+00:00"
+            "time": "2022-09-21T15:35:03+00:00"
         },
         {
             "name": "wilderborn/partyline",

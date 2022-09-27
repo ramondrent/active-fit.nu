@@ -10,7 +10,7 @@ return [
     | Set your version of reCAPTCHA here, either "3" or "2".
     |
     */
-    'recaptcha_version' => 3,
+    'recaptcha_version' => 2,
     
     /*
     |--------------------------------------------------------------------------
@@ -41,8 +41,8 @@ return [
         'size' => 'normal', // "normal", "compact", or "invisible"
         'theme' => 'light', // "light" or "dark"
         'tabindex' => 0,
-        'error_message' => 'You did not prove that you are not a robot.',
-        'terms' => 'This website has implemented reCAPTCHA v2 and your use of reCAPTCHA v2 is subject to the <a href="https://www.google.com/policies/privacy/" target="_blank">Google Privacy Policy</a> and <a href="https://www.google.com/policies/terms/" target="_blank">Terms of Use</a>.',
+        'error_message' => 'Onze excuses, het lijkt erop dat je een robot bent.',
+        'terms' => 'Dit formulier maakt gebruik van reCAPTCHA v3 om spam tegen te gaan. Bekijk de <a href="https://www.google.com/policies/privacy/" target="_blank">Google Privacy Policy</a> en <a href="https://www.google.com/policies/terms/" target="_blank">Voorwaarden</a> voor meer informatie.',
     ],
 
     /*
