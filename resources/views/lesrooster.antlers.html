@@ -1,41 +1,74 @@
 <div id="page-content">
     {{ partial:navigation }}
-
+    
     <!-- HERO  -->
     <section id="hero" class="hero-big  parallax-section text-light"
-        data-parallax-image="{{ theme:img src='small-group-1.jpg' }}">
+    data-parallax-image="{{ theme:img src='small-group-1.jpg' }}">
+    
+    <div id="page-title" class="wrapper align-center">
+        <h1 class="uppercase"><strong>Lesrooster</strong></h1>
+    </div> <!-- END #page-title -->
+    <a href="#" id="scroll-down"></a>
+    
+</section>
+<!-- HERO -->
 
-        <div id="page-title" class="wrapper align-center">
-            <h1 class="uppercase"><strong>Lesrooster</strong></h1>
-        </div> <!-- END #page-title -->
-        <a href="#" id="scroll-down"></a>
-
-    </section>
-    <!-- HERO -->
-
-    <section id="page-body">
-
-        <div class="column two-third">
-            <div class="wrapper-small">
-            <script src="https://www.paynplan.nl/require_app?c=3037&p=agenda&mode=listView"></script>
-            </div>
-
-            <div class="spacer-small"></div>
-        </div>
-
-        <div class="column one-third">
-            <div class="wrapper-small">
-                <h3 class="align-center"><strong>Staat jouw ideale tijd er niet bij?</strong></h3>
-                <hr class="zigzag small colored align-center">
-                <h5 class="subtitle-1 align-center">Stuur gerust een mail of bel voor meer informatie!<br><a
-                        class="sr-button sr-counter button-2 button-small rounded"
-                        href="mailto:info@active-fit.nu">info@active-fit.nu</a><a
-                        class="sr-button sr-counter button-2 button-small rounded"
-                        href="tel:+31611415741">0611415741</a></h5>
+<section id="page-body">
+    
+    <div class="column two-third">
+        
+        <script id="insert-bsport-widget-cdn">!function (b, s, p, o, r, t) { !typeof window.BsportWidget !== "undefined" && !document.getElementById("bsport-widget-cdn") && !function () { m = b.createElement(s), m.id = "bsport-widget-cdn", m.src = p, b.getElementsByTagName("head")[0].appendChild(m) }() }(document, "script", "https://cdn.bsport.io/scripts/widget.js")</script>
+        <script id="bsport-widget-mount">
+            function MountBsportWidget(config, repeat=1) {
+                if (repeat > 50) { return }
+                if (!window.BsportWidget) {
+                    return setTimeout(() => {
+                        MountBsportWidget(config,repeat+1)
+                    }, 100 * repeat || 1)
+                }
+                BsportWidget.mount(config)
+            }
+        </script>
+        <script>
+            MountBsportWidget({
+                "parentElement": "bsport-widget-67112",
+                "companyId": 1164,
+                "franchiseId": null,
+                "dialogMode": 1,
+                "widgetType": "calendarV2", 
+                "showFab": false,
+                "fullScreenPopup": true,
+                "styles":undefined,
+                "config": {
+                    "calendarV2": {                "coaches": [],
+                    "establishments": [],
+                    "metaActivities": [],
+                    "levels": [],
+                    "variant": "activityName",
+                    "groupSessionByPeriod": true,
+                    "todayOnly": false,
+                    "compactMode": null}
+                }  
+            })
+        </script>
+        <div id="bsport-widget-67112"></div>
+        
+        <div class="spacer-small"></div>
+    </div>
+    
+    <div class="column one-third">
+        <div class="wrapper-small">
+            <h3 class="align-center"><strong>Staat jouw ideale tijd er niet bij?</strong></h3>
+            <hr class="zigzag small colored align-center">
+            <h5 class="subtitle-1 align-center">Stuur gerust een mail of bel voor meer informatie!<br><a
+                class="sr-button sr-counter button-2 button-small rounded"
+                href="mailto:info@active-fit.nu">info@active-fit.nu</a><a
+                class="sr-button sr-counter button-2 button-small rounded"
+                href="tel:+31611415741">0611415741</a></h5>
                 <div class="spacer-big"></div>
             </div>
         </div>
-
+        
     </section>
 </div>
 
