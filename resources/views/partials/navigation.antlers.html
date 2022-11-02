@@ -54,36 +54,7 @@
                         <li class="{{ if current_uri == '/blog' }}current-menu-item{{ endif }}"><a href="/blog">Blog</a>
                         </li>
                         
-                        {{# <li><div class="sr-button button-1 button-small header-link" style="padding: 12px 20px;"><a class="text-white" href="https://app.paynplan.nl/account?id=3037" target="_blank">Inloggen</a></div></li> #}}
-                        
-                        <li><script id="insert-bsport-widget-cdn">!function (b, s, p, o, r, t) { !typeof window.BsportWidget !== "undefined" && !document.getElementById("bsport-widget-cdn") && !function () { m = b.createElement(s), m.id = "bsport-widget-cdn", m.src = p, b.getElementsByTagName("head")[0].appendChild(m) }() }(document, "script", "https://cdn.bsport.io/scripts/widget.js")</script>
-                            <script id="bsport-widget-mount">
-                                function MountBsportWidget(config, repeat=1) {
-                                    if (repeat > 50) { return }
-                                    if (!window.BsportWidget) {
-                                        return setTimeout(() => {
-                                            MountBsportWidget(config,repeat+1)
-                                        }, 100 * repeat || 1)
-                                    }
-                                    BsportWidget.mount(config)
-                                }
-                            </script>
-                            <script>
-                                MountBsportWidget({
-                                    "parentElement": "bsport-widget-924775",
-                                    "companyId": 1164,
-                                    "franchiseId": null,
-                                    "dialogMode": 1,
-                                    "widgetType": "loginButton", 
-                                    "showFab": false,
-                                    "fullScreenPopup": false,
-                                    "styles":undefined,
-                                    "config": {
-                                        "loginButton": {}
-                                    }  
-                                })
-                            </script>
-                            <div><div id="bsport-widget-924775"></div></div></li>
+                        <li><div class="sr-button button-1 button-small header-link" style="padding: 12px 20px;"><a class="text-white" href="https://backoffice.bsport.io/login?membership=1164" target="_blank">Inloggen</a></div></li>
                             
                             <li>
                                 <div class="sr-button button-2 button-small header-link" style="padding: 12px 20px;">
