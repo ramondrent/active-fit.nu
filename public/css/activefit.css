@@ -44,3 +44,7 @@ blockquote::before {
 #backtotop {
     display: none !important;
 }
+
+.hidden {
+	display: none;
+}

@@ -38,71 +38,50 @@
                         Zo: op aanvraag
                     </div>
 
-                    {{ form:set is="contact" }}
+                    {{ form:contact_form }}
+					<div class="column two-third last-col">
+						{{ if success }}
+							<div class="notification success closeable">
+								<p class="text-light">Bedankt! Het bericht is verzonden!</p>
+								<a href="" class="close"></a>
+							</div>
+						{{ else }}
 
-                    <div class="column two-third last-col">
-                        {{ if {form:success} }}
-                        <div class="notification success closeable">
-                            <p class="text-light">Bedankt! Het bericht is verzonden!</p>
-                            <a href="" class="close"></a>
-                        </div>
-                        {{ /if }}
+							{{ if errors }}
+								<div class="notification success closeable">
+									{{ errors }}
+										<p class="text-light">- {{ value }}</p>
+									{{ /errors }}
+								</div>
+							{{ /if }}
 
-                        {{ if {form:errors} }}
-                        <div class="notification success closeable">
-                            {{ form:errors }}
-                                <p class="text-light">- {{ value }}</p>
-                            {{ /form:errors }}
-                        </div>
-                        {{ /if }}
+							<h4 class="text-light"><strong>Contact / Intakeformulier</strong></h4>
+							<p class="text-light">Meer informatie of vrijblijvend een afspraak maken met één van onze trainers?<br>Neem contact met ons op via onderstaand formulier of de knoppen hiernaast.</p>
 
+							{{ fields }}
+								<div class="form-row">
+									<label for="{{ handle }}" class="text-light">
+										{{ display }}
+										{{ if validate | contains:required }}
+											<abbr title="required" class="required">*</abbr>
+										{{ /if }}
+									</label>
+									<div class="p-1">{{ field }}</div>
+									{{ if error }}
+										<p class="text-gray-500">{{ error }}</p>
+									{{ /if }}
+								</div>
+							{{ /fields }}
 
-                        <h4 class="text-light"><strong>Contact / Intakeformulier</strong></h4>
-                        <p class="text-light">Meer informatie of vrijblijvend een afspraak maken met één van onze
-                            trainers?<br>Neem contact met ons op via onderstaand formulier of de knoppen hiernaast.</p>
+							<input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+							
+							<div class="form-row text-light">
+								<button class="submit" type="submit">Verstuur</button>
+							</div>
+						{{ /if }}
+					</div>
 
-                        {{ form:create }}
-                            <div class="form-row">
-                                <label for="name" class="text-light">Naam <abbr title="required"
-                                        class="required">*</abbr></label>
-                                <input type="text" name="name" id="name" class="name req" value="{{ old:name }}" />
-                            </div>
-
-                            <div class="form-row">
-                                <label for="email" class="text-light">Email <abbr title="required"
-                                        class="required">*</abbr></label>
-                                <input type="text" name="email" id="email" class="email req" value="{{ old:email }}" />
-                            </div>
-
-                            <div class="form-row">
-                                <label for="phone" class="text-light">Telefoon <abbr title="required"
-                                        class="required">*</abbr></label>
-                                <input type="text" name="phone" id="phone" class="phone req" value="{{ old:phone }}" />
-                            </div>
-
-                            <div class="form-row">
-                                <label for="info" class="text-light">Ik wil graag meer informatie ontvangen
-                                    over:</label>
-                                <input type="text" name="info" id="info" class="info" value="{{ old:info }}" />
-                            </div>
-
-                            <div class="form-row">
-                                <label for="message" class="text-light">Opmerkingen</label>
-                                <textarea name="message" id="message" class="message" rows="15" cols="50">
-                                    {{ old:message }}
-                                </textarea>
-                            </div>
-
-                            {{ turnstile:field }}
-
-                            <div class="form-row text-light">
-                                <input type="submit" name="submit" class="submit" value="Verstuur" />
-                            </div>
-                        {{ /form:create }}
-                        
-                    </div>
-
-                    {{ /form:set }}
+                    {{ /form:contact_form }}
 
                 </div> <!-- END .column-section -->
 

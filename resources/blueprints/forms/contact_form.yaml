@@ -14,6 +14,8 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          validate:
+            - required
       -
         handle: email
         field:
@@ -26,6 +28,9 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          validate:
+            - required
+            - email
       -
         handle: phone
         field:
@@ -38,12 +43,14 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          validate:
+            - required
       -
-        handle: info
+        handle: subject
         field:
           input_type: text
           antlers: false
-          display: 'Meer informatie over'
+          display: 'Ik wil graag meer informatie ontvangen over:'
           type: text
           icon: text
           listable: hidden
@@ -57,6 +64,18 @@ sections:
           display: Bericht
           type: textarea
           icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+      -
+        handle: turnstile-fieldtype
+        field:
+          display: Captcha
+          type: turnstile
+          icon: lock
           listable: hidden
           instructions_position: above
           visibility: visible
