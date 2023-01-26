@@ -13,3 +13,12 @@ preferences:
         - main_image
         - body
         - date
+  forms:
+    contact:
+      columns:
+        - name
+        - email
+        - phone
+        - info
+        - message
+        - datestamp
