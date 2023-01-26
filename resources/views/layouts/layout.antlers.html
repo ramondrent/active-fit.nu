@@ -4,11 +4,11 @@
 <head>
     {{ partial:head2 }}
 
-    <style>
-        .grecaptcha-badge {
-            visibility: hidden;
-        }
-    </style>
+    {{ turnstile:script }}
+
+	{{ if environment == 'production' }}
+		<script src="https://cdn.usefathom.com/script.js" data-site="AOLZYCUC" defer></script>
+	{{ /if }}
 </head>
 
 <body>
