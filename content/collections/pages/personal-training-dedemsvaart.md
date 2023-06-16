@@ -1,6 +1,11 @@
-title: 'Personal training Dedemsvaart'
-seo_titel: 'Personal training in Dedemsvaart'
-seo_beschrijving: 'Active & Fit biedt personal training in Dedemsvaart. Ga de uitdaging met jezelf aan, haal alles eruit wat erin zit! Bij Active & Fit sport je onder begeleiding van een gediplomeerde personal trainer.'
-template: personal-training/dedemsvaart
+---
 id: 98265351-484b-443b-8d54-d0af51046f2d
+blueprint: pages
+title: 'Personal training Dedemsvaart'
+seo_titel: 'Personal training Dedemsvaart | Snel resultaat'
+seo_beschrijving: 'Op zoek naar personal training in Dedemsvaart? Boek jouw gratis proefles nu online! ✓Geheel vrijblijvend!'
+template: personal-training/dedemsvaart
 slug: personal-training-dedemsvaart
+updated_by: c362059c-1988-4793-975c-cf3fd60a5155
+updated_at: 1684767525
+---

@@ -1,6 +1,11 @@
-title: Contact
-seo_titel: 'Neem contact op'
-seo_beschrijving: 'Heeft u vragen of wil je je inschrijven voor een gratis proefles? Dat kan! Je kunt contact opnemen via ons email adres: info@active-fit.nu. Ook kun je ons volgen op social media'
-template: contact
+---
 id: de627bca-7595-429e-9b41-ad58703916d7
+blueprint: pages
+title: Contact
+seo_titel: 'Contact | Voor vragen & proefles inschrijvingen'
+seo_beschrijving: 'Heb je vragen of wil je meer weten over jouw gratis proefles? Neem direct contact met ons op! ✓Vrijblijvend'
+template: contact
 slug: contact
+updated_by: c362059c-1988-4793-975c-cf3fd60a5155
+updated_at: 1684767384
+---
